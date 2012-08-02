@@ -1,0 +1,17 @@
+<% provide(:title, "Video Chat") %>
+	<div class="center hero-unit">
+	<h1>Welcome to the Video Chat</h1>
+
+		<h2>
+		This is the home page for the
+		<a href="/">Rails Video Chat</a>.
+		</h2>
+		<%
+		if !signed_in? %>
+			<%= link_to "Sign up now!", signup_path, class: "btn btn-large btn-primary" %>
+			<%
+		end
+		%>
+	</div>
+
+	<%= link_to image_tag("rails.png", alt: "Rails"), '/' %>
