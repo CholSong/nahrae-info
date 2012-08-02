@@ -3,6 +3,9 @@
 #
 #   Ensure the SQLite 3 gem is defined in your Gemfile
 #   gem 'sqlite3'
+# MYSQL
+# CLEARDB_DATABASE_URL: mysql2://bb505864e2853f:b8bc95b1@us-cdbr-east.cleardb.com/heroku_8e17fadbd355c6f?reconnect=true
+
 development:
   adapter: sqlite3
   database: db/development.sqlite3
